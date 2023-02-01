@@ -1,1 +1,3 @@
 # mainpage
+
+a page like the web project, but more random...

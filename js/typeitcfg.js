@@ -1,3 +1,5 @@
+import './TypeIt.js';
+
 // Template
 new TypeIt("#ID", {
     strings: "This will be typed!",
@@ -5,5 +7,4 @@ new TypeIt("#ID", {
 
 new TypeIt("#troll", {
     strings: ["You have been trolled have been trolled apeofnjopeadnjfpioawnpiolwsenpio"]
-    waitUntilVisible: true
 }).go();

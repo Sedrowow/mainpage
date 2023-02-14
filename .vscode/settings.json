@@ -1,5 +1,6 @@
 {
     "files.autoSave": "off",
     "editor.fontLigatures": true,
-    "editor.fontVariations": true
+    "editor.fontVariations": true,
+    "editor.tabCompletion": "on"
 }

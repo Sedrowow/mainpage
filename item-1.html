@@ -1,33 +1,65 @@
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
-	<script src="js/modernizr.js"></script> <!-- Modernizr -->
-  	
-	<title>3D Folding Panel</title>
+	<title>Offers</title>
 </head>
 <body>
-	<div class="cd-fold-content single-page">
-		<h2>Title 1</h2>
-		<em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, laboriosam?</em>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus tempora nostrum aut quam praesentium veritatis nisi, odio eius, voluptatibus, iure neque commodi corrupti, inventore laborum fugiat itaque. Pariatur rem veritatis earum quia maxime praesentium accusantium ipsam veniam tenetur hic tempora, unde ipsa esse, aut est repellendus porro, maiores corporis illo!
-		</p>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus tempora nostrum aut quam praesentium veritatis nisi, odio eius, voluptatibus, iure neque commodi corrupti, inventore laborum fugiat itaque. Pariatur rem veritatis earum quia maxime praesentium accusantium ipsam veniam tenetur hic tempora, unde ipsa esse, aut est repellendus porro, maiores corporis illo!
-		</p>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, quidem, dolor! Necessitatibus libero suscipit voluptatum, ex voluptates. Ab, sit nam eum, officiis natus sunt totam aperiam id quo sed obcaecati itaque hic quia, facilis magni est sequi minima ex placeat commodi et modi eos consectetur recusandae. Adipisci quaerat voluptatum dolorem doloribus, ullam molestiae praesentium, saepe, voluptate quasi suscipit iure. Ipsam, iste excepturi dolore, explicabo numquam debitis ducimus laudantium? Aperiam perferendis accusantium quis magnam, odit doloribus, officia nesciunt voluptatum quidem voluptatibus veritatis temporibus adipisci dignissimos dolor quod beatae aliquam similique expedita! Distinctio rem tempora temporibus molestias veritatis accusamus ipsa pariatur iusto!
-		</p>
-	</div>
+<h2 style="color:#af0000">Our Offers</h2>
+
+<p>here are some of the many things that we offer:</p>
+<p>
+<h3 id="title1">Logistics:</h3>
+<p id="offerings1">
+</p>
+<br>
+<br>
+<h3 id="title2">Business:</h3>
+<p id="offerings2">
+</p>
+<br>
+<br>
+<br>
+<br>
+<p id="offerings3">
+<b id="offerings3" style="color:red";>"anything,</b><br>
+<b id="offerings3" style="color:green">anywhere,</b></b><br>
+<b id="offerings3" style="color:blue">everytime,</b><br>
+<b id="offerings3" style="color:#909000">always ready."</b><br>
+<br>
+<i id="offerings3" style="color:brown">that's our service slogan!</i><br>
+</p>
+<br>
+<br>
+<br>
+<br>
+<a href="./index.html" id="ending">get back to main page</a>
 </body>
-<script src="js/jquery-2.1.1.js"></script>
-<script src="js/main.js"></script> <!-- Resource jQuery -->
 <script src="./js/TypeIt.js"></script>
-<script src="./js/typeitcfg.js"></script>
+<script>
+new TypeIt("#title1", {
+	speed:250
+}).break().go();
+new TypeIt("#title2", {
+	speed:250
+}).go();
+
+new TypeIt("#offerings1", {
+	startDelay: 3500,
+}).type("we deliver anything;").break().pause(1000).break().type("we Transport anybody").pause(500).type(" (including dangerous people)").pause(500).break().type("(excluding endangered animals);").break().pause(1000).break().type("we help to deliver for others;").break().pause(1000).break().type("we protect logistics;").break().pause(1000).break().type("and more").pause(1000).type(".").pause(1000).type(".").pause(1000).type(".").break().go();
+
+new TypeIt("#offerings2", {
+	startDelay: 3000,
+	}).type("we accept offers;").break().pause(1000).break().type("we are offering;").break().pause(1000).break().type("we <span class='sellcla'>buy</span> <span class='sellstop'>anything;</span>").move(".sellcla", {to: "END"}).type(" and sell ").move(10).break().pause(1000).break().type("and more").pause(1000).type(".").pause(1000).type(".").pause(1000).type(".").break().go();
+	
+new TypeIt("#offerings3", {
+	startDelay: 8000,
+	nextStringDelay: 1000
+}).go();
+
+new TypeIt("#ending", {
+	lifelike: false,
+}).go();
+</script>
 </body>
 </html>

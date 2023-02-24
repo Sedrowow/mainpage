@@ -9,4 +9,7 @@ new TypeIt("#troll", {
   strings: ["click the button below to see our services"]
 }).go();
 
+new TypeIt("#oof", {
+}).go();
+
 //Sedrowow Chaos Companies

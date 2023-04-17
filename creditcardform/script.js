@@ -1,6 +1,3 @@
-/*
-See on github: https://github.com/muhammederdem/credit-card-form
-*/
 
 new Vue({
   el: "#app",
@@ -29,24 +26,24 @@ new Vue({
     getCardType () {
       let number = this.cardNumber;
       let re = new RegExp("^4");
-      if (number.match(re) != null) return "visa";
+      if (number.match(re) != null) return "normal";
 
-      re = new RegExp("^(34|37)");
-      if (number.match(re) != null) return "amex";
+      re = new RegExp("^(86|68)");
+      if (number.match(re) != null) return "vip";
 
       re = new RegExp("^5[1-5]");
-      if (number.match(re) != null) return "mastercard";
+      if (number.match(re) != null) return "masterrank";
 
-      re = new RegExp("^6011");
-      if (number.match(re) != null) return "discover";
+      re = new RegExp("^8080");
+      if (number.match(re) != null) return "admin";
       
-      re = new RegExp('^9792')
-      if (number.match(re) != null) return 'troy'
+      re = new RegExp('^0404')
+      if (number.match(re) != null) return 'errinsys'
 
-      return "visa"; // default type
+      return "normal"; // default type
     },
 		generateCardNumberMask () {
-			return this.getCardType === "amex" ? this.amexCardMask : this.otherCardMask;
+			return this.getCardType === "vip" ? this.amexCardMask : this.otherCardMask;
     },
     minCardMonth () {
       if (this.cardYear === this.minCardYear) return new Date().getMonth() + 1;

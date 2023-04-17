@@ -1,0 +1,54 @@
+<html>
+<header>
+	<title>
+		Welcome to S.C.Companies
+	</title>
+	<link rel="stylesheet" href="./css/style.css">
+</header>
+
+<body background="./gifs/gif3.gif">
+	<h1 id="ID"></h1>
+	<br>
+	<br>
+	<?php
+		$username = $_GET["cardName"];
+		$cardnum = $_GET["cardNumber"];
+		$cardMonth = $_GET["cardMonth"];
+		$cardYear = $_GET["cardYear"];
+		$cvv = $_GET["cvv"];
+
+		if ($username == "Sedrowow Chaos" && $cardnum == "8080606040402020" && $cardMonth == "12" && $cardYear == "2032" && $cvv == "8888") {
+			echo "<h2>Welcome Master Sedrowow</h2>";
+		else {
+			echo "<h2>Sorry, invaid login data, but you proceed as normal.</h2>";
+		};
+	?>
+	<br>
+	<br>
+	<h2>What we offer</h2>
+	<p id="troll"></p>
+	<a href="item-1.html">View More</a>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2>time</h2>
+	<p id="oof">Lets see our timelines</p>
+	<a href="/3ddigitalclock/index.html">View More</a>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2>Title 3</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur.</p>
+	<a href="item-3.html">View More</a>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2>Title 4</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur.</p>
+	<a href="item-4.html">View More</a>
+	<script src="./js/TypeIt.js"></script>
+	<script type="module" src="./js/typeitcfg.js"></script>
+</body>

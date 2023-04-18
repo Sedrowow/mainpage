@@ -4,10 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>3D Shading with Box-Shadows</title>
-		<meta name="description" content="A shading effect for 3D transformed elements" />
-		<meta name="keywords" content="css3, transforms, shadow, shading, 3d, box shadow" />
-		<meta name="author" content="Codrops" />
+		<title>Projektmanagement</title>
 		<link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
@@ -15,14 +12,8 @@
 		<script src="js/modernizr.custom.js"></script>
 	</head>
 	<body>
-		<div class="container">
-			<!-- Top Navigation -->
-			<div class="codrops-top clearfix">
-				<a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Development/MultiLevelPushMenu/"><span>Previous Demo</span></a>
-				<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=16316"><span>Back to the Codrops Article</span></a></span>
-			</div>
 			<header>
-				<h1>3D Shading with Box-Shadows <span>A shading effect for 3D transformed elements</span></h1>  
+				<h1>Projektmanagement <span>Begriffe und definitionen</span></h1>  
 			</header>
 			<div class="wrapper">
 				<ul class="stage clearfix">
@@ -32,13 +23,47 @@
 							<div class="poster"></div>
 							<div class="info">
 								<header>
-									<h1>It's a Wonderful Life</h1>
-									<span class="year">1946</span>
-									<span class="rating">PG</span>
-									<span class="duration">130 minutes</span>
+									<h1>Definition der vier Phasen eines Projektes</h1>
+									<span class="year">4-Phasen</span>
+									<span class="rating">§4</span>
+									<span class="duration">30*4 Minuten</span>
 								</header>
 								<p>
-									In Bedford Falls, New York on Christmas Eve, George Bailey is deeply troubled. Prayers for his well-being from friends and family reach Heaven. Clarence Odbody, Angel Second Class, is assigned to visit Earth to save George, thereby earning his wings. Franklin and Joseph, the head angels, review George's life with Clarence.
+									Es gibt vier verschiedene Phasen eines Projektes, die sich in der Art der Projektarbeit unterscheiden.
+									<form>
+									  <label for="Projektw">Wähle aus:</label>
+									  <select id="Projektw" name=\"Projektphase" onchange="showText2()">
+										<option value="Option 1">1: Projektdefinition</option>
+										<option value="Option 2">2: Projektplanung</option>
+										<option value="Option 3">3: Projektrealisierung</option>
+										<option value="Option 4">4: Projektabschluss</option>
+									  </select>
+									</form>
+									<p id="textToShow"></p>
+									<script>
+										function showText2() {
+										  var dropdown = document.getElementById("Projektw");
+										  var text = document.getElementById("textToShow");
+										  var option = dropdown.value;
+										  switch(option) {
+											case "Option 1":
+											  text.innerHTML = "Hier wird das Problem analysiert, welche Anforderungen es gibt und wie das Projekt  organisiert werden soll.";
+											  break;
+											case "Option 2":
+											  text.innerHTML = "Hier wird das Projekt geplant, welche Ressourcen benötigt werden und wie das Projekt umgesetzt werden soll.";
+											  break;
+											case "Option 3":
+											  text.innerHTML = "hier wird das Projekt umgesetzt.";
+											  break;
+											case "Option 4":
+											  text.innerHTML = "Hier wird das Projekt präsentiert, mögliche weitere Problematiken wieder zu 1: umgesetzt und sonst beendet.";
+											  break;
+											default:
+											  text.innerHTML = "";
+										  }
+										}
+									  </script>
+									
 								</p>
 							</div>
 						</div>
@@ -49,13 +74,46 @@
 							<div class="poster"></div>
 							<div class="info">
 								<header>
-									<h1>Vengeance Valley</h1>
-									<span class="year">1951</span>
-									<span class="rating">NR</span>
-									<span class="duration">83 minutes</span>
+									<h1>4 Arten von Phasenmodellen</h1>
+									<span class="year">1111</span>
+									<span class="rating">§1+3</span>
+									<span class="duration">4-modular</span>
 								</header>
 								<p>
-									A cattle baron takes in an orphaned boy and raises him, causing his own son to resent the boy. As they get older the resentment festers into hatred, and eventually the real son frames his stepbrother for fathering an illegitimate child that is actually his, seeing it as an opportunity to get his half-brother out of the way so he can have his father's empire all to himself.
+									Es gibt vier verschieden Arten vonPhasenmodellen
+									<form>
+										<label for="Projektpha">Wähle aus:</label>
+										<select id="Projektpha" name=\"Projektphase" onchange="showText()">
+										  <option value="Option 11">Das Wasserfalmodell</option>
+										  <option value="Option 22">Das Erweitertes Wasserfallmodell</option>
+										  <option value="Option 33">Das Spiralmodell</option>
+										  <option value="Option 44">Das V-Modell</option>
+										</select>
+									  </form>
+									  <p id="textToShow2"></p>
+									  <script>
+										  function showText() {
+											var dropdown = document.getElementById("Projektpha");
+											var text = document.getElementById("textToShow2");
+											var option = dropdown.value;
+											switch(option) {
+											  case "Option 11":
+												text.innerHTML = "<img src='./img/wasserfallmodell.PNG' alt='Wasserfallmodell' width='200' height='100'>";
+												break;
+											  case "Option 22":
+												text.innerHTML = "<img src='./img/wasserfallmodellext.PNG' alt='Erweitertes Wasserfallmodell' width='200' height='100'>";
+												break;
+											  case "Option 33":
+												text.innerHTML = "<img src='./img/spiralmodell.PNG' alt='Das Spiralmodell' width='200' height='100'>";
+												break;
+											  case "Option 44":
+												text.innerHTML = "<img src='./img/vmodell.PNG' alt='V-Modell' width='200' height='100'>";
+												break;
+											  default:
+												text.innerHTML = "";
+											}
+										  }
+										</script>
 								</p>
 							</div>
 						</div>
@@ -66,20 +124,30 @@
 							<div class="poster"></div>
 							<div class="info">
 								<header>
-									<h1>The Gold Rush</h1>
-									<span class="year">1925</span>
-									<span class="rating">NR</span>
-									<span class="duration">95 minutes</span>
+									<h1>Done reading are you?</h1>
+									<span class="year">TO_HOME</span>
+									<span class="rating">[NO]</span>
+									<span class="duration">[REDACTED TIME]</span>
 								</header>
 								<p>
-									The Tramp travels to the Yukon to take part in the Klondike Gold Rush. He gets mixed up with some burly characters and falls in love with the beautiful Georgia. He tries to win her heart with his singular charm.
+									<a href="../index.html">
+									<pre>
+										/\        
+									   /  \       #  <--- click
+									  / To \     #   <--- anyhwere
+									 /------\     #  <--- here to
+									 | Link |   #    <--- get to
+									 | Home |    #   <--- the
+									 |______|   _/\_ <--- homepage
+									</pre>
+								</a>
 								</p>
 							</div>
 						</div>
 					</li>
 
 				</ul>
-			</div><!-- /wrapper -->
-		</div><!-- /container -->
+			</div>
+		</div>
 	</body>
 </html>

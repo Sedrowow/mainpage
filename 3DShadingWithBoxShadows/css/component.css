@@ -140,6 +140,12 @@ Movie information
 	border-top: 10px solid #555;
 }
 
+.info pre {
+	padding: 1.2em 1.4em;
+	margin: 2px 0 0;
+	line-height: 0.6em;
+}
+
 /*************************************
 Generate "lighting" using box shadows
 **************************************/

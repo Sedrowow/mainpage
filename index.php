@@ -19,7 +19,7 @@
 
 		if ($username == "Sedrowow Chaos" && $cardnum == "8080606040402020" && $cardMonth == "12" && $cardYear == "2032" && $cvv == "8888") {
 			echo "<h2>Welcome Master Sedrowow</h2>";
-		else {
+		} else {
 			echo "<h2>Sorry, invaid login data, but you proceed as normal.</h2>";
 		};
 	?>
@@ -34,7 +34,7 @@
 	<br>
 	<h2>time</h2>
 	<p id="oof">Lets see our timelines</p>
-	<a href="/3ddigitalclock/index.html">View More</a>
+	<a href="./3ddigitalclock/index.html">View More</a>
 	<br>
 	<br>
 	<br>

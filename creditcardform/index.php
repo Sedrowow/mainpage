@@ -178,6 +178,7 @@ if (isset($_POST["cardNumber"]) && isset($_POST["cardName"]) && isset($_POST["ca
   $cardMonth = $_POST["cardMonth"];
   $cardYear = $_POST["cardYear"];
   // do stuff
+  header("../index.php");
 }
 ?>
 </body>

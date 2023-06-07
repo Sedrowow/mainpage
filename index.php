@@ -20,7 +20,7 @@
 		if ($username == "Sedrowow Chaos" && $cardnum == "8080606040402020" && $cardMonth == "12" && $cardYear == "2032" && $cvv == "8888") {
 			echo "<h2>Welcome Master Sedrowow</h2>";
 		} else {
-			echo "<h2>Sorry, invaid login data, but you proceed as normal.</h2>";
+			echo "<h2>Sorry, invaid login data, but you can proceed as guest.</h2>";
 		};
 	?>
 	<br>
